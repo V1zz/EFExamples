@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFExamples", "EFExamples\EFExamples.csproj", "{C1D2CF45-8173-41F2-9469-BFB088F8BEA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarShop.Models", "CarShop.Models\CarShop.Models.csproj", "{A17F963C-ECA3-4BAD-A023-891EF86471BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarShop.DAL", "CarShop.DAL\CarShop.DAL.csproj", "{83E10B14-2A17-4491-AB61-345846C80824}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1D2CF45-8173-41F2-9469-BFB088F8BEA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D2CF45-8173-41F2-9469-BFB088F8BEA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D2CF45-8173-41F2-9469-BFB088F8BEA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D2CF45-8173-41F2-9469-BFB088F8BEA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A17F963C-ECA3-4BAD-A023-891EF86471BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A17F963C-ECA3-4BAD-A023-891EF86471BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A17F963C-ECA3-4BAD-A023-891EF86471BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A17F963C-ECA3-4BAD-A023-891EF86471BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83E10B14-2A17-4491-AB61-345846C80824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83E10B14-2A17-4491-AB61-345846C80824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83E10B14-2A17-4491-AB61-345846C80824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83E10B14-2A17-4491-AB61-345846C80824}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
