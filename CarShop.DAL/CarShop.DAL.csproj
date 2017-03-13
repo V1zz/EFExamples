@@ -49,7 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CarShopDataModel.cs" />
+    <Compile Include="CarShopContext.cs" />
+    <Compile Include="FakeDbContext.cs" />
     <Compile Include="Migrations\201702171953342_CarEntityChanged.cs" />
     <Compile Include="Migrations\201702171953342_CarEntityChanged.Designer.cs">
       <DependentUpon>201702171953342_CarEntityChanged.cs</DependentUpon>
@@ -57,6 +58,10 @@
     <Compile Include="Migrations\201702171957088_ChangedCar.cs" />
     <Compile Include="Migrations\201702171957088_ChangedCar.Designer.cs">
       <DependentUpon>201702171957088_ChangedCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703061926054_DAL.cs" />
+    <Compile Include="Migrations\201703061926054_DAL.Designer.cs">
+      <DependentUpon>201703061926054_DAL.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,6 +72,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702171957088_ChangedCar.resx">
       <DependentUpon>201702171957088_ChangedCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703061926054_DAL.resx">
+      <DependentUpon>201703061926054_DAL.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -1,5 +1,7 @@
 ﻿using EFExamples;
 using System;
+using CarShop.Models;
+using CarShop.Services.Repos;
 
 namespace EFExamples
 {
@@ -7,17 +9,30 @@ namespace EFExamples
     {
         static void Main(string[] args)
         {
-            using (var context = new CarShopDataModel())
+            var service = new CarBrandRepos();
+            
+            var mercedes = new CarBrands
             {
-                context.SaveChanges();
-                foreach (var car in context.Cars)
-                {
-                    
-                    var carFullName = $"{car.CarModels.CarBrands.Brand} {car.CarModels.Model} {car.Year.Year}";
-                    Console.WriteLine(carFullName);
-                }
-            }
+                Id = Guid.NewGuid(),
+                Brand = "Mercedes"
+            };
+            service.Add(mercedes);
 
+            var bmw = new CarBrands
+            {
+                Id = Guid.NewGuid(),
+                Brand = "BMW"
+            };
+            service.Add(bmw);
+
+            var toyota = new CarBrands
+            {
+                Id = Guid.NewGuid(),
+                Brand = "Toyota"
+            };
+            service.Add(toyota);
+
+            var model22 = service.Find(c => c.Brand == "Toyota" || c.Brand == "BMW");
             Console.ReadLine();
         }
     }

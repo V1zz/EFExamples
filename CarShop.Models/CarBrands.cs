@@ -12,6 +12,7 @@ namespace CarShop.Models
             CarModels = new HashSet<CarModels>();
         }
 
+
         public Guid Id { get; set; }
 
         [Required]
@@ -19,6 +20,6 @@ namespace CarShop.Models
         public string Brand { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CarModels> CarModels { get; set; }
+        public virtual ICollection<CarModels> CarModels { get; protected set; }
     }
 }
